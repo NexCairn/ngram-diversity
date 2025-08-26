@@ -49,7 +49,7 @@ def main(
             gram = "".join(t)
             # gram = " ".join(t) if by == "word" else "".join(t)
             typer.echo(f"  {gram}\t{c}")
-            typer.echo(f"  composition_ratio(%): {c / sum(counts.values()):.4f*100}")
+            typer.echo(f"  composition_ratio(%): {c / sum(counts.values())*100}")
 
 def _main() -> None:
     typer.run(main)
