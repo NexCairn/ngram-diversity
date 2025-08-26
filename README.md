@@ -25,4 +25,6 @@ echo 'test' | ngdiv --n 3 --json
 
 ### Output format without Json
 
+Removing `--json` option will output result in raw text.
+
 ![img](data/stdout_sample.png)
