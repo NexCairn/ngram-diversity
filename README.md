@@ -9,7 +9,7 @@ pip install -e .
 ```
 
 ## Usage
-Analyse from text file
+### Analyse from text file
 
 ```
 ngdiv --n 3 --json test.txt
@@ -17,12 +17,12 @@ ngdiv --n 3 --json test.txt
 
 ![img](data/file_input_sample.png)
 
-Analyse from stdin
+### Analyse from stdin
 ```
 echo 'test' | ngdiv --n 3 --json
 ```
 ![img](data/stdin_sample.png)
 
-Output format is also available without Json
+### Output format without Json
 
 ![img](data/stdout_sample.png)
