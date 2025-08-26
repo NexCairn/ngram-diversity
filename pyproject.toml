@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ngram-diversity"
+version = "0.0.1"
+description = "Compute n-gram diversity from text (CLI)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "NexCairn" }]
+dependencies = ["typer>=0.12.0"]
+
+[project.urls]
+Homepage = "https://github.com/NexCairn/ngram-diversity"
+
+[project.scripts]
+ngdiv = "ngram_diversity.cli:_main"  # ← これで 'ngdiv' コマンドが入る
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
